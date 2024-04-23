@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--Metatag del sito-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prenotazioni del CoffeeHouse di Bitcamp" />
+    <meta name="keywords" content="Prenotazioni CoffeeHouse, posti riservati, privè, Vip" />
+    <meta name="author" content="Bascelli Mattia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+    <title>Prenotazioni - CoffeeHouse</title>
+    <!--CSS-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: url('img/background.jpg') fixed;
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            background: rgba(170,162,119,0.8);
+            padding: 30px;
+        }
+
+        nav {
+            text-align: center;
+            background: rgb(170,162,119);
+            padding: 10px;
+        }
+
+            nav a {
+                margin: 0;
+                text-decoration: none;
+            }
+
+                nav a:link {
+                    color: #b8762b;
+                }
+
+                nav a:visited {
+                    color: #7a4c17;
+                }
+
+                nav a:hover {
+                    background-color: #CE7869;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: #e5dab1;
+                }
+
+                nav a:active {
+                    color: #e7c7a2;
+                }
+        /* Classe descrizione*/
+        .descrizione {
+            background: #fff;
+            text-align: center;
+            margin: 30px 60px 30px 60px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+            .descrizione img {
+                width: 50%;
+                height: 50%;
+                object-fit: cover;
+            }
+
+                .descrizione img:hover {
+                    animation: 1s blinker linear infinite;
+                }
+
+            .descrizione ul {
+                list-style: none;
+                padding: 0px;
+                color: saddlebrown;
+            }
+
+            .descrizione a {
+                margin: 0;
+                text-decoration: none;
+            }
+
+                .descrizione a:link {
+                    color: #b8762b;
+                }
+
+                .descrizione a:visited {
+                    color: #7a4c17;
+                }
+
+                .descrizione a:hover {
+                    background-color: #CE7869;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: #e5dab1;
+                }
+
+                .descrizione a:active {
+                    color: #e7c7a2;
+                }
+
+        #brown {
+            color: saddlebrown;
+        }
+        /* Keyframe animazione blinker*/
+        @keyframes blinker {
+            0% {
+                opacity: 1.0;
+            }
+
+            25% {
+                opacity: 0.8;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            75% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(170,162,119,0.8);
+            padding: 5px;
+        }
+        form {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255,255,255, 0.8);
+            border-radius: 10px;
+        }
+
+            form label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            form input, form select {
+                width: 95%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form button {
+                background-color: #CE7869;
+                color: #e5dab1;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" />
+        <h1>CoffeeHouse</h1>
+        <p>Tutto il caffè del mondo e non solo!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="chiSiamo.html">Chi Siamo</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="prenotazioni.html">Prenotazioni</a>
+    </nav>
+    <section class="descrizione">
+        <h2>PRENOTAZIONI</h2>
+        <p>Non perdere il tuo posto, prenota subito!</p>
+        <p id="brown">NON DIMENTICARE DI SCRIVERCI SE HAI DELLE INTOLLERANZE!</p>
+    </section>
+    <form action="#" method="get">
+        <label for="nomeCognome">Nome e Cognome</label>
+        <input type="text" id="nomeCognome" name="nomeCognome" required />
+        <label for="data">Data prenotazione:</label>
+        <input type="date" id="data" name="data" required />
+        <label for="ora">Ora prenotazioneo:</label>
+        <input type="time" id="ora" name="ora" required />
+        <label for="intolleranza">hai delle intolleranze? Scrivicelo</label>
+        <input type="text" id="intolleranza" name="intolleranza" />
+        <button type="submit">Prenota Subito!</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 CoffeeHouse - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
